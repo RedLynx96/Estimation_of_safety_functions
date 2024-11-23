@@ -1,0 +1,73 @@
+Model: "2000Asymmetricmse_10_res"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_2 (InputLayer)           [(None, 1)]          0           []                               
+                                                                                                  
+ input_1 (InputLayer)           [(None, 2000, 2)]    0           []                               
+                                                                                                  
+ repeat_vector (RepeatVector)   (None, 2000, 1)      0           ['input_2[0][0]']                
+                                                                                                  
+ concatenate (Concatenate)      (None, 2000, 3)      0           ['input_1[0][0]',                
+                                                                  'repeat_vector[0][0]']          
+                                                                                                  
+ multi_head_attention (MultiHea  (None, 2000, 3)     15363       ['concatenate[0][0]',            
+ dAttention)                                                      'concatenate[0][0]']            
+                                                                                                  
+ add (Add)                      (None, 2000, 3)      0           ['multi_head_attention[0][0]',   
+                                                                  'concatenate[0][0]']            
+                                                                                                  
+ conv1d (Conv1D)                (None, 2000, 1024)   4096        ['add[0][0]']                    
+                                                                                                  
+ conv1d_1 (Conv1D)              (None, 2000, 3)      3075        ['conv1d[0][0]']                 
+                                                                                                  
+ add_1 (Add)                    (None, 2000, 3)      0           ['conv1d_1[0][0]',               
+                                                                  'add[0][0]']                    
+                                                                                                  
+ multi_head_attention_1 (MultiH  (None, 2000, 3)     15363       ['add_1[0][0]',                  
+ eadAttention)                                                    'add_1[0][0]']                  
+                                                                                                  
+ add_2 (Add)                    (None, 2000, 3)      0           ['multi_head_attention_1[0][0]', 
+                                                                  'add_1[0][0]']                  
+                                                                                                  
+ conv1d_2 (Conv1D)              (None, 2000, 1024)   4096        ['add_2[0][0]']                  
+                                                                                                  
+ conv1d_3 (Conv1D)              (None, 2000, 3)      3075        ['conv1d_2[0][0]']               
+                                                                                                  
+ add_3 (Add)                    (None, 2000, 3)      0           ['conv1d_3[0][0]',               
+                                                                  'add_2[0][0]']                  
+                                                                                                  
+ conv1d_4 (Conv1D)              (None, 1994, 512)    11264       ['add_3[0][0]']                  
+                                                                                                  
+ dropout (Dropout)              (None, 1994, 512)    0           ['conv1d_4[0][0]']               
+                                                                                                  
+ conv1d_5 (Conv1D)              (None, 1992, 512)    786944      ['dropout[0][0]']                
+                                                                                                  
+ dropout_1 (Dropout)            (None, 1992, 512)    0           ['conv1d_5[0][0]']               
+                                                                                                  
+ global_max_pooling1d (GlobalMa  (None, 512)         0           ['dropout_1[0][0]']              
+ xPooling1D)                                                                                      
+                                                                                                  
+ global_average_pooling1d (Glob  (None, 512)         0           ['dropout_1[0][0]']              
+ alAveragePooling1D)                                                                              
+                                                                                                  
+ concatenate_1 (Concatenate)    (None, 1024)         0           ['global_max_pooling1d[0][0]',   
+                                                                  'global_average_pooling1d[0][0]'
+                                                                 ]                                
+                                                                                                  
+ dense (Dense)                  (None, 512)          524800      ['concatenate_1[0][0]']          
+                                                                                                  
+ dropout_2 (Dropout)            (None, 512)          0           ['dense[0][0]']                  
+                                                                                                  
+ dense_1 (Dense)                (None, 256)          131328      ['dropout_2[0][0]']              
+                                                                                                  
+ dropout_3 (Dropout)            (None, 256)          0           ['dense_1[0][0]']                
+                                                                                                  
+ output (Dense)                 (None, 1)            257         ['dropout_3[0][0]']              
+                                                                                                  
+==================================================================================================
+Total params: 1,499,661
+Trainable params: 1,499,661
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
