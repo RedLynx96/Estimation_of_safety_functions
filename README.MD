@@ -1,4 +1,4 @@
-# 🌀 Deep Learning-Based Analysis of Basins of Attraction 🌀
+# 🌀 AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems 🌀
 
 Welcome to the official repository for the paper:  
 **David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuán; *Deep learning-based analysis of basins of attraction*.**  
@@ -15,16 +15,19 @@ To ensure smooth execution of the code, we recommend setting up a dedicated Pyth
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo-name/your-repo.git
-   cd your-repo
+   git clone https://github.com/RedLynx96/Estimation_of_safety_functions.git
+   cd Estimation_of_safety_functions
+   ```
 
 2. Create the Conda environment from the provided environment.yml file:
    ```bash
    conda env create -f environment.yml
+   ```
 
 3. Activate the environment:
    ```bash
-    conda activate <your-env-name>
+    conda activate SafetyFunctionAI
+   ```
 
 ## 📚 Available Scripts
 
@@ -33,17 +36,18 @@ Train a new model from scratch without using external datasets.
 This script focuses on generating models based purely on internal computations.
 
 **Run it with:**
-```bash
-python train_transformer_no_files.py
-
+   ```bash
+    python train_transformer_no_files.py
+   ```
 
 ### 2️⃣ **`Safety_trainer.py`**
 Train models using external datasets, specifically matrices shaped `(50, 1000)`.  
 Ensure your datasets are pre-processed and properly formatted before running this script.
 
 **Run it with:**
-```bash
-python Safety_trainer.py
+   ```bash
+    python Safety_trainer.py
+   ```
 
 ## ✨ Features
 
@@ -60,7 +64,7 @@ If you use this code in your work, please cite our paper:
 ```bibtex
 @article{valle2024deep,
   title={Deep learning-based analysis of basins of attraction},
-  author={David Valle, Alexandre Wagemakers, Miguel A. F. Sanju{\'a}n},
+  author={David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuan},
   journal={Chaos},
   volume={34},
   number={3},
