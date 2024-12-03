@@ -36,18 +36,17 @@ Train a new model from scratch without using external datasets.
 This script focuses on generating models based purely on internal computations.
 
 **Run it with:**
-   ```bash
-    python train_transformer_no_files.py
-   ```
+```bash
+python train_transformer_no_files.py
+
 
 ### 2️⃣ **`Safety_trainer.py`**
 Train models using external datasets, specifically matrices shaped `(50, 1000)`.  
 Ensure your datasets are pre-processed and properly formatted before running this script.
 
 **Run it with:**
-   ```bash
-    python Safety_trainer.py
-   ```
+```bash
+python Safety_trainer.py
 
 ## ✨ Features
 
@@ -73,4 +72,3 @@ If you use this code in your work, please cite our paper:
   publisher={AIP Publishing},
   doi={10.1063/5.0159656}
 }
-
