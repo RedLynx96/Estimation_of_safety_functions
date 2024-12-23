@@ -1,9 +1,9 @@
 # 🌀 AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems 🌀
 
 Welcome to the official repository for the paper:  
-**David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuán; *Deep learning-based analysis of basins of attraction*.**  
-Published in [Chaos, March 2024 (Vol. 34, Issue 3)](https://doi.org/10.1063/5.0159656).  
-DOI: [10.1063/5.0159656](https://doi.org/10.1063/5.0159656)
+**David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuán; *AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems*.**  
+Published in [Chaos, January 2025 (Vol. X, Issue X)](https://doi.org-).  
+DOI: [10.1063/-](https://doi.org/10.1063/-)
 
 This repository provides the code and environment setup to reproduce the results of our paper. Whether you're interested in training new models from scratch or working with external datasets, we've got you covered! 🚀
 
@@ -44,6 +44,7 @@ This script focuses on generating models based purely on internal computations.
 ### 2️⃣ **`Safety_trainer.py`**
 Train models using external datasets, specifically matrices shaped `(50, 1000)`.  
 Ensure your datasets are pre-processed and properly formatted before running this script.
+**Ensure that cuDNN is property installed to reduce computation times!**
 
 **Run it with:**
    ```bash
@@ -64,13 +65,13 @@ If you use this code in your work, please cite our paper:
 
 ```bibtex
 @article{valle2024deep,
-  title={Deep learning-based analysis of basins of attraction},
+  title={AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems,
   author={David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuan},
   journal={Chaos},
-  volume={34},
-  number={3},
-  pages={033105},
-  year={2024},
+  volume={X},
+  number={X},
+  pages={X},
+  year={2025},
   publisher={AIP Publishing},
-  doi={10.1063/5.0159656}
+  doi={10.1063/-}
 }
