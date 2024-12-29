@@ -56,7 +56,7 @@ Run the predictor in Google Colab, bypassing the need for a local graphics card.
 
 **To use:**
 
-1. **Open the notebook in [Google Colab](https://colab.research.google.com/).**
+1. **Open the notebook in [Google Colab](https://colab.research.google.com/github/RedLynx96/Estimation_of_safety_functions/blob/main/Predictor_Colab.ipynb).**
 
 2. **Enable a GPU or TPU in the Colab runtime settings:**
    - Go to `Runtime` > `Change runtime type`.
