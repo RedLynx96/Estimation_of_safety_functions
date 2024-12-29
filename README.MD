@@ -64,7 +64,11 @@ Run the predictor in Google Colab, bypassing the need for a local graphics card.
 
 3. **Execute the notebook cells** to run the predictor seamlessly on Google's infrastructure.
 
+### 🎥 Demo Videos
 
+#### GUI and Colab Predictor Demonstration
+
+[![Demo](https://www.youtube.com/watch?v=HB7j7R2oMJs/43.jpg)](https://www.youtube.com/watch?v=HB7j7R2oMJs)
 
 ## ✨ Features
 
