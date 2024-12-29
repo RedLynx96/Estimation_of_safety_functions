@@ -68,7 +68,9 @@ Run the predictor in Google Colab, bypassing the need for a local graphics card.
 
 #### GUI and Colab Predictor Demonstration
 
-[![Demo](https://img.youtube.com/vi/HB7j7R2oMJs/0.jpg)](https://www.youtube.com/watch?v=HB7j7R2oMJs)
+<p align="center">
+  [![Demo](https://img.youtube.com/vi/HB7j7R2oMJs/0.jpg)](https://www.youtube.com/watch?v=HB7j7R2oMJs)
+</p>
 
 ## ✨ Features
 
