@@ -5,7 +5,7 @@ Welcome to the official repository for the paper:
 Published in [Chaos, January 2025 (Vol. X, Issue X)](https://doi.org-).  
 DOI: [10.1063/-](https://doi.org/10.1063/-)
 
-This repository provides the code and environment setup to reproduce the results of our paper. Whether you're interested in training new models from scratch or working with external datasets, we've got you covered! 🚀
+This repository provides the code and environment setup to reproduce the results of our paper. Whether you're interested in training new models from scratch, working with external datasets, or leveraging cloud-based resources, we've got you covered! 🚀
 
 ---
 
@@ -50,6 +50,21 @@ Ensure your datasets are pre-processed and properly formatted before running thi
    ```bash
    python Safety_trainer.py
    ```
+
+### 3️⃣ **`predictor_colab.ipynb`**
+Run the predictor in Google Colab, bypassing the need for a local graphics card.
+
+**To use:**
+
+1. **Open the notebook in [Google Colab](https://colab.research.google.com/).**
+
+2. **Enable a GPU or TPU in the Colab runtime settings:**
+   - Go to `Runtime` > `Change runtime type`.
+   - Select `GPU` or `TPU` from the Hardware accelerator dropdown.
+
+3. **Execute the notebook cells** to run the predictor seamlessly on Google's infrastructure.
+
+
 
 ## ✨ Features
 
