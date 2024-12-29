@@ -51,7 +51,25 @@ Ensure your datasets are pre-processed and properly formatted before running thi
    python Safety_trainer.py
    ```
 
-### 3️⃣ **`predictor_colab.ipynb`**
+### 3️⃣ **`Predictor_GUI.py`**
+
+A standalone GUI application designed for predicting safety functions.
+
+#### **Key Features**
+- **Graphical User Interface**: Intuitive and user-friendly for seamless interaction.
+- **Real-Time Predictions**: Provides visualizations of safety function predictions interactively.
+
+#### **System Requirements**
+To ensure the application runs smoothly, ensure the following:
+- A **graphics card** with appropriate drivers and CUDA support is installed.
+
+**Run it with:**
+   ```bash
+   python Predictor_GUI.py
+   ```
+> **Note**: This application is designed for **local use** due to its graphical nature and reliance on GPU resources. Ensure your system meets the hardware requirements (including a compatible graphics card) before running the GUI.
+
+### 4️⃣ **`predictor_colab.ipynb`**
 Run the predictor in Google Colab, bypassing the need for a local graphics card.
 
 **To use:**
