@@ -2,8 +2,8 @@
 
 Welcome to the official repository for the paper:  
 **David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuán; *AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems*.**  
-Published in [Chaos, January 2025 (Vol. X, Issue X)](https://doi.org-).  
-DOI: [10.1063/-](https://doi.org/10.1063/-)
+<!-- Published in [Chaos, January 2025 (Vol. X, Issue X)](https://doi.org-).--> 
+<!-- DOI: [10.1063/-](https://doi.org/10.1063/-).--> 
 
 This repository provides the code and environment setup to reproduce the results of our paper. Whether you're interested in training new models from scratch, working with external datasets, or leveraging cloud-based resources, we've got you covered! 🚀
 
@@ -79,14 +79,12 @@ Run the predictor in Google Colab, bypassing the need for a local graphics card.
 If you use this code in your work, please cite our paper:
 
 ```bibtex
-@article{valle2024deep,
-  title={AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems,
-  author={David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuan},
-  journal={Chaos},
-  volume={X},
-  number={X},
-  pages={X},
-  year={2025},
-  publisher={AIP Publishing},
-  doi={10.1063/-}
+@misc{valle2024aidrivencontrolchaostransformerbased,
+      title={AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems}, 
+      author={David Valle and Rubén Capeáns and Alexandre Wagemakers and Miguel A. F. Sanjuán},
+      year={2024},
+      eprint={2412.17357},
+      archivePrefix={arXiv},
+      primaryClass={nlin.CD},
+      url={https://arxiv.org/abs/2412.17357}, 
 }
