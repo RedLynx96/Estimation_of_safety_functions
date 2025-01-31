@@ -1,11 +1,14 @@
 # 🌀 AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems 🌀
 
-Welcome to the official repository for the paper:  
-**David Valle, Alexandre Wagemakers, Miguel A. F. Sanjuán; *AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems*.**  
-<!-- Published in [Chaos, January 2025 (Vol. X, Issue X)](https://doi.org-).--> 
-<!-- DOI: [10.1063/-](https://doi.org/10.1063/-).--> 
+Welcome to the official repository for the following papers:  
 
-This repository provides the code and environment setup to reproduce the results of our paper. Whether you're interested in training new models from scratch, working with external datasets, or leveraging cloud-based resources, we've got you covered! 🚀
+**David Valle, Rubén Capeans, Alexandre Wagemakers, Miguel A. F. Sanjuán; *AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems*.**  
+Available on [arXiv:2412.17357](https://arxiv.org/abs/2412.17357).  
+
+**David Valle, Rubén Capeans, Alexandre Wagemakers, Miguel A. F. Sanjuán; *Controlling Transient Chaos in the Lorenz System with Machine Learning*.**  
+Available on [arXiv:2501.17588](https://arxiv.org/abs/2501.17588).  
+
+This repository provides the code and environment setup to reproduce the results of our papers. Whether you're interested in training new models from scratch, working with external datasets, or leveraging cloud-based resources, we've got you covered! 🚀  
 
 ---
 
@@ -82,6 +85,21 @@ Run the predictor in Google Colab, bypassing the need for a local graphics card.
 
 3. **Execute the notebook cells** to run the predictor seamlessly on Google's infrastructure.
 
+### 5️⃣ **Lorenz_Classical_Safety_Estimator_Matlab.m**
+
+This MATLAB script is **mandatory** for computing the classical safety function of the Lorenz system, as it accounts for variable noise in data. The computed safety function is crucial for comparisons with the transformer-based model.
+
+#### **Key Features**
+- **Generates Sampled Data (`xVectors`)**: Creates a dataset of sampled orbits from the Lorenz system under partial control.
+- **Computes Classical Safety Function (`Us`)**: Estimates the classical safety function with noise-adaptive modeling.
+- **Visualizes the Lorenz Attractor**: Provides 3D trajectory plots and Poincaré section analysis.
+- **Supports Controlled Trajectory Computation**: Enables testing of controlled orbits using classical or machine-learning-based safety functions.
+
+#### **Usage Instructions**
+1. **Run the script in MATLAB**:
+   ```matlab
+   Lorenz_Classical_Safety_Estimator_Matlab
+
 ### 🎥 Demo Videos
 
 #### GUI and Colab Predictor Demonstration
@@ -107,10 +125,20 @@ If you use this code in your work, please cite our paper:
 ```bibtex
 @misc{valle2024aidrivencontrolchaostransformerbased,
       title={AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems}, 
-      author={David Valle and Rubén Capeáns and Alexandre Wagemakers and Miguel A. F. Sanjuán},
+      author={David Valle and Rubén Capeans and Alexandre Wagemakers and Miguel A. F. Sanjuán},
       year={2024},
       eprint={2412.17357},
       archivePrefix={arXiv},
       primaryClass={nlin.CD},
       url={https://arxiv.org/abs/2412.17357}, 
+}
+
+@misc{valle2025controllingtransientchaoslorenz,
+      title={Controlling Transient Chaos in the Lorenz System with Machine Learning}, 
+      author={David Valle and Rubén Capeans and Alexandre Wagemakers and Miguel A. F. Sanjuán},
+      year={2025},
+      eprint={2501.17588},
+      archivePrefix={arXiv},
+      primaryClass={nlin.CD},
+      url={https://arxiv.org/abs/2501.17588}, 
 }
