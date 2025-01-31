@@ -520,19 +520,22 @@ class SafetyFunctionGUI:
                 except KeyError:
                     self.y = None  # 'y' data is optional
 
-                self.xVectors = np.nan_to_num(self.xVectors, nan=-1)  # Replace NaNs with -1
-                self.xVectors = np.reshape(self.xVectors, (1000 * 50, 2))
-                self.xVectors = self.xVectors[~np.any(self.xVectors == -1, axis=1)]
-            
-                Separated_xVectors = []
-                for i in range(len(self.xVectors) - 1):
-                    Separated_xVectors.append(self.xVectors[i])
-                    if self.xVectors[i][1] != self.xVectors[i + 1][0]:
-                        Separated_xVectors.append([-1, -1])
-                # Append the last row
-                Separated_xVectors.append(self.xVectors[-1])
-                # Convert result back to numpy array
-                self.xVectors = np.array(Separated_xVectors)
+                if self.xVectors.shape == (1000, 50, 2):
+                    self.xVectors = np.nan_to_num(self.xVectors, nan=-1)  # Replace NaNs with -1
+                    self.xVectors = np.reshape(self.xVectors, (1000 * 50, 2))
+                    self.xVectors = self.xVectors[~np.any(self.xVectors == -1, axis=1)]
+                
+                    Separated_xVectors = []
+                    for i in range(len(self.xVectors) - 1):
+                        Separated_xVectors.append(self.xVectors[i])
+                        if self.xVectors[i][1] != self.xVectors[i + 1][0]:
+                            Separated_xVectors.append([-1, -1])
+                    # Append the last row
+                    Separated_xVectors.append(self.xVectors[-1])
+                    # Convert result back to numpy array
+                    self.xVectors = np.array(Separated_xVectors)
+                else:
+                    print('Array shaped' + str(self.xVectors.shape))
 
                 # Reset predictions and classical computations
                 self.predictions = {}
@@ -744,7 +747,7 @@ class SafetyFunctionGUI:
             # Calculate noise_max using the GetNoise function
             self.noise_max = GetNoise()  # Example value: 0.0335
             print(f"Maximum noise value: {self.noise_max}")
-            iteraciones = 25  # safe set iterations
+            iteraciones = 50  # safe set iterations
 
             # Interpolate y_func (self.Us) to have 1000 points
             interp_func = interp1d(
