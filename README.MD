@@ -5,8 +5,8 @@ Welcome to the official repository for the following papers:
 **David Valle, Rubén Capeans, Alexandre Wagemakers, Miguel A. F. Sanjuán; *AI-Driven Control of Chaos: A Transformer-Based Approach for Dynamical Systems*.**  
 Available on [arXiv:2412.17357](https://arxiv.org/abs/2412.17357).  
 
-**David Valle, Rubén Capeans, Alexandre Wagemakers, Miguel A. F. Sanjuán; *Controlling Transient Chaos in the Lorenz System with Machine Learning*.**  
-Available on [arXiv:2501.17588](https://arxiv.org/abs/2501.17588).  
+**David Valle, Rubén Capeans, Alexandre Wagemakers, Miguel A. F. Sanjuán; *Controlling Transient Chaos in the Lorenz System with Machine Learning*.**
+Published in The European Physical Journal Special Topics (2025). Available at https://doi.org/10.1140/epjs/s11734-025-01589-w.
 
 This repository provides the code and environment setup to reproduce the results of our papers. Whether you're interested in training new models from scratch, working with external datasets, or leveraging cloud-based resources, we've got you covered! 🚀  
 
@@ -133,12 +133,12 @@ If you use this code in your work, please cite our paper:
       url={https://arxiv.org/abs/2412.17357}, 
 }
 
-@misc{valle2025controllingtransientchaoslorenz,
-      title={Controlling Transient Chaos in the Lorenz System with Machine Learning}, 
-      author={David Valle and Rubén Capeans and Alexandre Wagemakers and Miguel A. F. Sanjuán},
-      year={2025},
-      eprint={2501.17588},
-      archivePrefix={arXiv},
-      primaryClass={nlin.CD},
-      url={https://arxiv.org/abs/2501.17588}, 
+@article{Valle2025,
+  author    = {Valle, D. and Capeans, R. and Wagemakers, A. and Sanju{\'a}n, M. A. F.},
+  title     = {Controlling transient chaos in the Lorenz system with machine learning},
+  journal   = {The European Physical Journal Special Topics},
+  year      = {2025},
+  doi       = {10.1140/epjs/s11734-025-01589-w},
+  url       = {https://doi.org/10.1140/epjs/s11734-025-01589-w}
 }
+
